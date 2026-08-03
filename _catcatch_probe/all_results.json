@@ -1,0 +1,59 @@
+{
+  "26390": {
+    "series_id": "26390",
+    "title": "节目26390",
+    "entry_url": "https://www.dushe07.com/play/26390-41-936828.html",
+    "total_episodes": 0,
+    "episodes": [],
+    "episode_m3u8s": {
+      "41": "https://142.248.97.97:21306/data7/jvods/hls/dhz/26/25453/25010223/3_26390_937124/1280/index.m3u8?appId=dsdy&sign=a4478cb91821370318ee5d563fe207e9&timestamp=1785767646&ref=0"
+    },
+    "m3u8_count": 1
+  },
+  "240994": {
+    "series_id": "240994",
+    "title": "不白吃古诗词漫游记第二季",
+    "entry_url": "https://www.dushe07.com/play/240994-41-987230.html",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "ep": 21,
+        "url": "https://www.dushe07.com/play/240994-21-469067.html",
+        "src": "469067"
+      },
+      {
+        "ep": 35,
+        "url": "https://www.dushe07.com/play/240994-35-987152.html",
+        "src": "987152"
+      },
+      {
+        "ep": 41,
+        "url": "https://www.dushe07.com/play/240994-41-987230.html",
+        "src": "987230"
+      }
+    ],
+    "episode_m3u8s": {
+      "41": "https://208.69.102.161:21306/data3/jvods/hls/dhz/28/27402/25010413/3_240994_987387/1280/index.m3u8?appId=dsdy&sign=ba5b02bb995638feba260bfd0d9f70c5&timestamp=1785767666&ref=0",
+      "21": "https://bfikuncdn.com/20240710/4VaRmJTa/index.m3u8"
+    },
+    "m3u8_count": 2
+  },
+  "216800": {
+    "series_id": "216800",
+    "title": "节目216800",
+    "entry_url": "https://www.dushe07.com/play/216800-41-988596.html",
+    "total_episodes": 0,
+    "episodes": [],
+    "episode_m3u8s": {},
+    "m3u8_count": 0
+  },
+  "239430": {
+    "series_id": "239430",
+    "title": "节目239430",
+    "entry_url": "https://www.dushe07.com/play/239430-41-936705.html",
+    "total_episodes": 0,
+    "episodes": [],
+    "episode_m3u8s": {},
+    "m3u8_count": 0
+  }
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.log
+_probe_html/
+downloads/
+*.mp4
+*.ts
+*.m3u8
