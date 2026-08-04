@@ -495,7 +495,7 @@ def download_episode(ep, m3u8_url, series_name, series_id):
             return ep, False, "no output"
         src = max(files, key=os.path.getmtime)
 
-        out_dir = os.path.join(ROOT, series_name)
+        out_dir = os.path.join(DOWNLOAD_DIR, series_name)
         os.makedirs(out_dir, exist_ok=True)
         dst = os.path.join(out_dir, f"{series_name}_第{ep:02d}集.mp4")
         if os.path.exists(dst):
@@ -582,7 +582,7 @@ def main():
     print("\nPhase 3: 验证")
     for sid, result in all_results.items():
         series_name = result.get("title") or f"节目{sid}"
-        out_dir = os.path.join(ROOT, series_name)
+        out_dir = os.path.join(DOWNLOAD_DIR, series_name)
         if not os.path.exists(out_dir):
             continue
         files = sorted(glob.glob(os.path.join(out_dir, "*.mp4")))

@@ -57,7 +57,7 @@ def download_episode(ep, m3u8_url, series_name, total_eps=None):
         src = max(files, key=os.path.getmtime)
 
         # Step 2: ffmpeg 重新封装为标准 MP4 (moov atom 前置)
-        out_dir = os.path.join(ROOT, series_name)
+        out_dir = os.path.join(DOWNLOAD_DIR, series_name)
         os.makedirs(out_dir, exist_ok=True)
         dst = os.path.join(out_dir, f"{series_name}_第{ep:02d}集.mp4")
         if os.path.exists(dst):

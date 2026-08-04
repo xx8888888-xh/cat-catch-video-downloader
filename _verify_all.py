@@ -5,6 +5,7 @@ import subprocess
 
 FFPROBE = r"D:\software\ffmpeg\bin\ffprobe.exe"
 ROOT = r"C:\Users\xx\Desktop\reclip-main"
+DOWNLOAD_DIR = os.path.join(ROOT, "downloads")
 
 SERIES = [
     ("不白吃话山海经", 41),
@@ -22,7 +23,7 @@ total_files = 0
 total_missing = 0
 
 for name, expected in SERIES:
-    d = os.path.join(ROOT, name)
+    d = os.path.join(DOWNLOAD_DIR, name)
     files = sorted(glob.glob(os.path.join(d, "*.mp4"))) if os.path.exists(d) else []
     print(f"\n[{name}] 期望 {expected} 集, 实际 {len(files)} 文件")
 

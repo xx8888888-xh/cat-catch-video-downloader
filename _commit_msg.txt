@@ -1,5 +1,0 @@
-chore: 清理无用临时文件，移入waste folder
-
-将探测过程产生的临时HTML/JSON、早期探测脚本、日志等与最终交付无关
-的文件统一移动到 waste folder（已被gitignore忽略），并从仓库移除，
-仅保留核心交付脚本(_catcatch_engine.py/_catcatch_v2.py/_verify_all.py)。
