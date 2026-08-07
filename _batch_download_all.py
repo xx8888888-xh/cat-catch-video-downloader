@@ -13,9 +13,10 @@ import shutil
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ROOT = r"C:\Users\xx\Desktop\reclip-main"
+# 基于脚本自身位置的可移植路径 (脚本位于项目根目录)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FFMPEG = r"D:\software\ffmpeg\bin\ffmpeg.exe"
-DOWNLOAD_DIR = os.path.join(ROOT, "downloads")
+DOWNLOAD_DIR = os.path.join(BASE_DIR, "downloads")
 CONCURRENT_FRAGMENTS = 8
 MAX_PARALLEL = 3
 

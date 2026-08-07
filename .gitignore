@@ -8,3 +8,4 @@ downloads/
 *.m3u8
 waste folder/
 ai-relay.ps1
+venv/

@@ -20,9 +20,10 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 # ════════════════════════════════════════════════════════════════════
 # 配置
 # ════════════════════════════════════════════════════════════════════
-ROOT = r"C:\Users\xx\Desktop\reclip-main"
-CATCATCH_DIR = os.path.join(ROOT, "cat-catch-master")
-DOWNLOAD_DIR = os.path.join(ROOT, "downloads")
+# 基于脚本自身位置的可移植路径 (脚本位于项目根目录)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CATCATCH_DIR = BASE_DIR
+DOWNLOAD_DIR = os.path.join(BASE_DIR, "downloads")
 PROBE_DIR = os.path.join(CATCATCH_DIR, "_catcatch_probe")
 FFMPEG = r"D:\software\ffmpeg\bin\ffmpeg.exe"
 FFPROBE = r"D:\software\ffmpeg\bin\ffprobe.exe"

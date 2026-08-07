@@ -4,7 +4,8 @@ import glob
 import subprocess
 
 FFPROBE = r"D:\software\ffmpeg\bin\ffprobe.exe"
-ROOT = r"C:\Users\xx\Desktop\reclip-main"
+# 基于脚本自身位置的可移植路径 (脚本位于项目根目录)
+ROOT = os.path.dirname(os.path.abspath(__file__))
 DOWNLOAD_DIR = os.path.join(ROOT, "downloads")
 
 SERIES = [
